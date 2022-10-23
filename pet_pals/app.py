@@ -28,9 +28,9 @@ app = Flask(__name__)
 
 
 # create route that renders index.html template
-#@app.route("/")
-#def home():
-    #return render_template("index.html")
+@app.route("/")
+def home():
+    return render_template("index.html")
 
 
 # Query the database and send the jsonified results
@@ -49,8 +49,8 @@ app = Flask(__name__)
     #return render_template("form.html")
 
 
-@app.route("/api/pals")
-def pals():
+# @app.route("/api/pals")
+# def pals():
     #results = db.session.query(Pet.name, Pet.lat, Pet.lon).all()
 
     #hover_text = [result[0] for result in results]
